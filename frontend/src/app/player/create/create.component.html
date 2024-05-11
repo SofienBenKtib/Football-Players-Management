@@ -1,0 +1,59 @@
+<div class="container">
+  <h1>Add a new player</h1>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="title">Player name:</label>
+      <input
+        formControlName="name"
+        id="name"
+        type="text"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Team :</label>
+      <input
+        formControlName="team"
+        id="team"
+        type="text"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="title">Player position:</label>
+      <input
+        formControlName="position"
+        id="position"
+        type="text"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Shirt's number:</label>
+      <input
+        formControlName="pnumber"
+        id="pnumber"
+        type="number"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Nationality:</label>
+      <input
+        formControlName="nationality"
+        id="nationality"
+        type="text"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="title">Age:</label>
+      <input formControlName="age" id="age" type="text" class="form-control" />
+    </div>
+    <br />
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,69 @@
+<div class="container">
+  <h1>Update a Player</h1>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="title">Player Name:</label>
+      <input
+        formControlName="name"
+        id="name"
+        type="text"
+        [(ngModel)]="player.name"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Team:</label>
+      <input
+        formControlName="team"
+        id="team"
+        type="text"
+        [(ngModel)]="player.team"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Position:</label>
+      <input
+        formControlName="position"
+        id="position"
+        type="text"
+        [(ngModel)]="player.position"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Shirt's number:</label>
+      <input
+        formControlName="pnumber"
+        id="pnumber"
+        type="number"
+        [(ngModel)]="player.pnumber"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Nationality :</label>
+      <input
+        formControlName="nationality"
+        id="nationality"
+        type="text"
+        [(ngModel)]="player.nationality"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Age :</label>
+      <input
+        formControlName="age"
+        id="age"
+        type="number"
+        [(ngModel)]="player.age"
+        class="form-control"
+      />
+    </div>
+
+    <br />
+    <button class="btn btn-primary" type="submit">Save changes</button>
+  </form>
+</div>
